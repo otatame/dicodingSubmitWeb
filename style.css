@@ -1,0 +1,101 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    color: black;
+    align-items: center;
+    background-color: #F8F3D4;
+    position: absolute;
+    width: 100%;
+}
+
+nav #logo{
+    display: flex;
+}
+
+#logo p{
+    font-weight: 700;
+    font-size: 26px;
+    padding-left: 1em;
+    padding-top: 12px;
+    font-family: 'Arima Madurai', cursive;
+    
+}
+
+#logo img{
+    width: 10%;
+}
+
+nav #menu ul{
+    display: flex;
+}
+
+#menu ul li{
+    padding: 0 10px;
+}
+
+#menu ul li a{
+    font-size: 18px;
+    color: black;
+}
+
+/* jumbotron */
+#jumbotron{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    padding: 0 3em;
+}
+
+/* jumbo1 */
+#jumbotron .jumbo1{
+    width: 50%;
+}
+
+/* jumbo 2 */
+#jumbotron .jumbo2{
+    background-image: url('./assets/72ppi/1.png');
+    background-size: 75%;
+    margin-top: 5em;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 55%;
+    transform: rotate(120deg);
+}
+
+#jumbotron .jumbo3{
+    background-image: url('./assets/kucing.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: 50em;
+}
+
