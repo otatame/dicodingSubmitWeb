@@ -15,6 +15,7 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 *{
@@ -74,7 +75,7 @@ nav #menu ul{
     color: black;
 }
 
-#menu ul li a::after{
+#menu ul li .menus::after{
     content: '';
     background-color: #FFDE7D;
     width: 0;
@@ -83,9 +84,24 @@ nav #menu ul{
     transition: all ease-out .3s;
 }
 
-#menu ul li a:hover:after{
+#menu ul li .menus:hover:after{
     width: 100%;
     transition: all ease-out .3s;
+}
+
+#menu ul li .btnKontak{
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: 2px solid #FFDE7D;
+    color: #F6416C;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 #FFDE7D;
+    transition: all ease-in .4s;
+}
+
+#menu ul li .btnKontak:hover{
+    color: white;
+    box-shadow: inset 112px 0 0 0 #FFDE7D;
 }
 
 /* jumbotron */
@@ -94,7 +110,7 @@ nav #menu ul{
     height: 100vh;
     align-items: center;
     position: relative;
-    padding: 0 4em;
+    padding: 0 5em;
 }
 
 /* jumbo1 */
@@ -102,24 +118,70 @@ nav #menu ul{
     width: 50%;
 }
 
+.jumbo1 h1{
+    font-size: 48px;
+    color: #05aa9c;
+}
+
+.jumbo1 p{
+    font-size: 18px;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+}
+
+.jumbo1 .teksBawah{
+    margin-bottom: 20px;
+}
+
+.jumbo1 a{
+    padding: 10px 25px;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #F6416C;
+    box-shadow: inset 0 0 0 0 #F6416C;
+    transition: ease .5s;
+}
+
+.jumbo1 a:hover{
+    color: white;
+    box-shadow: inset 0 100px 0 0 #F6416C;
+}
+
 /* jumbo 2 */
 #jumbotron .jumbo2{
     background-image: url('./assets/72ppi/1.png');
-    background-size: 75%;
+    background-size: 480px;
     margin-top: 5em;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 55%;
+    width: 50vw;
+    height: 55vh;
     transform: rotate(120deg);
+    position: relative;
 }
 
+/* jumbo 3 */
 #jumbotron .jumbo3{
     background-image: url('./assets/kucing.png');
-    background-size: 60%;
+    background-size: 450px;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 70%;
+    width: 50vw;
+    height: 70vh;
     position: absolute;
-    left: 50em;
+    right: -10%;
 }
 
+/* jumbo 4 */
+#jumbotron .jumbo4{
+    background-image: url('./assets/72ppi/2.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80%;
+    right: 5em;
+    z-index: -1;
+    transform: rotate(100deg);
+}
