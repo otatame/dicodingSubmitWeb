@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap');
 
+/*
+
+Green : #00B8A9
+Cream : #F8F3D4
+Red : #F6416C
+Yellow : #FFDE7D
+
+*/
+
 body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -29,9 +38,9 @@ nav{
     padding: 1em 3em;
     color: black;
     align-items: center;
-    background-color: #F8F3D4;
     position: absolute;
     width: 100%;
+    z-index: 5;
 }
 
 nav #logo{
@@ -61,7 +70,22 @@ nav #menu ul{
 
 #menu ul li a{
     font-size: 18px;
+    font-weight: 400;
     color: black;
+}
+
+#menu ul li a::after{
+    content: '';
+    background-color: #FFDE7D;
+    width: 0;
+    height: 3px;
+    display: flex;
+    transition: all ease-out .3s;
+}
+
+#menu ul li a:hover:after{
+    width: 100%;
+    transition: all ease-out .3s;
 }
 
 /* jumbotron */
@@ -70,7 +94,7 @@ nav #menu ul{
     height: 100vh;
     align-items: center;
     position: relative;
-    padding: 0 3em;
+    padding: 0 4em;
 }
 
 /* jumbo1 */
