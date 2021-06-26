@@ -39,9 +39,17 @@ nav{
     padding: 1em 3em;
     color: black;
     align-items: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 5;
+    transition: ease-in .2s;
+}
+
+nav.sticky{
+    padding: 1.2em 5em;
+    transition: ease-in .2s;
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.075);
 }
 
 nav #logo{
@@ -159,6 +167,7 @@ nav #menu ul{
     height: 55vh;
     transform: rotate(120deg);
     position: relative;
+    z-index: -2;
 }
 
 /* jumbo 3 */
@@ -173,15 +182,18 @@ nav #menu ul{
 }
 
 /* jumbo 4 */
-#jumbotron .jumbo4{
-    background-image: url('./assets/72ppi/2.png');
-    background-repeat: no-repeat;
-    background-size: 150px;
-    width: 100%;
-    height: 100%;
+#jumbotron .jumbo4 img{
+    width: 150px;
     position: absolute;
-    top: 80%;
-    right: 5em;
+    top: 20%;
+    right: 30%;
     z-index: -1;
-    transform: rotate(100deg);
+    transform: rotate(30deg);
+}
+
+/* main */
+main{
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+    padding: 2em 3em;
 }
