@@ -112,6 +112,38 @@ nav #menu ul{
     box-shadow: inset 112px 0 0 0 #FFDE7D;
 }
 
+/* dropdown */
+#menu .dropdown .downMenus{
+    display: none;
+}
+
+#menu .dropdown:hover .downMenus{
+    display: flex;
+    position: absolute;
+    background-color: #FFDE7D;
+    top: 70%;
+    border-radius: 4px;
+}
+
+#menu .dropdown .downMenus ul{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+}
+
+#menu .dropdown .downMenus ul li{
+    display: flex;
+    width: 7.5em;
+}
+
+#menu .dropdown .downMenus ul li a{
+    padding: 8px 0;
+}
+
+#menu .dropdown .downMenus ul li a:hover{
+    color: white;
+}
+
 /* jumbotron */
 #jumbotron{
     display: flex;
