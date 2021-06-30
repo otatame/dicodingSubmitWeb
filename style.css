@@ -32,6 +32,7 @@ li{
     list-style: none;
 }
 
+
 /* Navbar */
 nav{
     display: flex;
@@ -226,6 +227,107 @@ nav #menu ul{
 /* main */
 main{
     height: 100vh;
-    background-color: rgb(253, 253, 253);
+    background-color: #fffcfc;
     padding: 2em 3em;
+}
+
+#category{
+    margin: 0 2em;
+}
+
+#category h3{
+    font-size: 42px;
+    color:  #00B8A9;
+}
+
+#category #katList{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+#category #katList img{
+    width: 15em;
+}
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+    /* nav */
+    #nav{
+        padding-left:  1.5em;
+        padding-right: 1.5em;
+        margin: 0;
+    }
+
+    #nav #menu{
+        display: none;
+        
+    }
+
+    #nav #logo img{
+        display: none;
+    }
+
+    #nav #logo p{
+        padding: 0;
+        font-size: 20px;
+    }
+
+    #nav #hamburger .ham{
+        display: flex;
+        flex-direction: column;
+        width: 25px;
+        height: 5px;
+        background-color: black;
+    }
+    /* jumbotron */
+    #jumbotron{
+        display: flex;
+        flex-direction: column;
+        padding: 7em 2em 0 2em;
+        align-items: baseline;
+        height: 110vh;
+    }
+
+    #jumbotron .jumbo1{
+        width: 100%;
+    }
+
+    #jumbotron .jumbo1 .teksAtas{
+        font-size: 2em;
+    }
+
+    #jumbotron .jumbo1 .teksBawah{
+        font-size: 2em;
+    }
+
+    #jumbotron .jumbo1 p{
+        font-size: 14px;
+    }
+
+    #jumbotron .jumbo1 a{
+        font-size: 14px;
+        
+    }
+
+    #jumbotron .jumbo2, .jumbo4{
+        display: none;
+    }
+
+    #jumbotron .jumbo3{
+        position: initial;
+        width: 100vw;
+        height: 100vh;
+        background-size: 320px;
+        margin-top: 3em;
+    }
+
+    /* main */
+    #category{
+        flex-direction: column;
+    }
+
+    #category #katList{
+        flex-direction: column;
+    }
 }
