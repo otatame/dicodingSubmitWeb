@@ -716,3 +716,9 @@ footer{
         width: 500px;
     }
 }
+
+@media screen and (min-width: 900px){
+    #love .msg img{
+        width: 640px;
+    }
+}
