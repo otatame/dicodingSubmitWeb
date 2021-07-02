@@ -233,18 +233,19 @@ nav #menu ul{
 
 /* main */
 main{
-    height: 100vh;
-    background-color: #fffcfc;
-    padding: 2em 3em;
+    height: 100%;
 }
 
 #category{
-    margin: 0 2em;
+    padding: 2em 3em;
+    width: 100%;
+    background-color: #fff8f8;
 }
 
 #category h3{
     font-size: 42px;
     color:  #00B8A9;
+    text-align: center;
 }
 
 #category #katList{
@@ -255,6 +256,227 @@ main{
 
 #category #katList img{
     width: 15em;
+    transition: ease .2s;
+}
+
+#category #katList .card{
+    width: 400px;
+    height: 630px;
+    background-color: #00B8A9;
+    padding: 3em 3em;
+    margin: 1em 1em;
+    border-radius: 5px;
+    transition: ease .2s;
+}
+
+#category #katList .card h4{
+    font-size: 30px;
+    padding: 26px 0;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(158, 158, 158);
+}
+
+#category #katList .card p{
+    font-size: 18px;
+}
+
+#category #katList .card:hover{
+    background-color:#ffd556;
+    transition: ease .2s;
+}
+
+#category #katList .card:hover img{
+    width: 16em;
+    transition: ease .2s;
+}
+
+#category #katList .card button{
+    cursor: pointer;
+    border: none;
+    padding: 1.1em 2.5em;
+    margin-top: 1.5em;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color:#F6416C;
+    color: white;
+    position: relative;
+    transition: .3s;
+}
+
+#category #katList .card button::after{
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 19px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#category #katList .card button:hover{
+    padding: 1.1em 2.8em;
+    background-color: #ff2b4e;
+}
+
+#category #katList .card button:hover::after{
+    opacity: 1;
+    right: 24px;
+}
+
+
+#love{
+    height: 80vh;
+}
+
+#love h3{
+    text-align: center;
+    font-size: 32px;
+    color:#F6416C;
+    margin: 2em 0;
+}
+
+.msg{
+    display: flex;
+    margin: 0 3em;
+    align-items: center;
+}
+
+.msg img{
+    width: 640px;
+    border-radius: 5px;
+}
+
+.msg p{
+    font-size: 36px;
+    padding: 0 1em;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.msg p span{
+    color: #F6416C;
+}
+
+.msg p .q:not(:last-child){
+    margin-right: 1em;
+}
+
+.msg p .q:not(:first-child){
+    margin-left: 1em;
+}
+
+/* Profile */
+#aboutMe{
+    background-color: rgb(243, 243, 243);
+    height: 70vh;
+}
+
+#aboutMe h3{
+    text-align: center;
+    font-size: 32px;
+    color:#00B8A9;
+    padding: 2em 0;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0 5em;
+    padding: 2em 0;
+    border-radius: 20px;
+}
+
+.bio .biocard img{
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 6px solid #05aa9c;
+}
+
+.bio .biocard p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 1.2em;
+}
+
+
+.bio .biodata{
+    width: 50%;
+    margin-left: 5em;
+}
+
+.bio .biodata .nama{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bio .biodata .lokasi{
+    font-style: italic;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 5em;
+    background-color: rgb(30, 39, 59);
+}
+
+.logo-footer img{
+    width: 100px;
+}
+
+.logo-footer p{
+    font-size: 28px;
+    font-family: 'Arima Madurai', cursive;
+    color: white;
+}
+
+.social-media ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media ul li{
+    padding: 7px 0;
+}
+
+.social-media ul li a{
+    color: white;
+}
+
+.social-media ul li a:hover{
+    text-shadow: 0 0 2px rgb(177, 177, 177);
+}
+
+.social-media ul li i{
+    margin-right: 7px;
+}
+
+.contact-us{
+    margin-top: 2.5em;
+}
+
+.contact-us a{
+    color: white;
+    background-color: #F6416C;
+    padding: 1em 2.5em;
+    border-radius: 40px;
+}
+
+.contact-us a:hover{
+    background-color:#fd516e;
+}
+
+.contact-us p{
+    margin-top: 2em;
+    color: white;
+    font-size: 15px;
 }
 
 /* Media Query */
@@ -298,6 +520,10 @@ main{
 
     #nav #menu ul li a{
         font-size: 22px;
+    }
+
+    #nav #menu ul .btnKontak:hover{
+        box-shadow: inset 128px 0 0 0 #FFDE7D;
     }
 
     #nav #menu ul .dropdown .downMenus{
@@ -403,11 +629,79 @@ main{
     }
 
     /* main */
-    #category{
-        flex-direction: column;
+
+    #category h3{
+        text-align: center;
     }
 
     #category #katList{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #category #katList img{
+        width: 180px;
+        padding: 20px 0;
+    }
+
+    #category #katList .card{
+        width: 350px;
+    }
+
+    #category #katList .card:hover img{
+        width: 190px;
+    }
+
+    #love .msg{
         flex-direction: column;
+    }
+
+    #love .msg img{
+        width: 400px;
+    }
+
+    #love .msg p{
+        margin-top: 2em;
+    }
+    
+    #aboutMe{
+        height: 110vh;
+    }
+
+    #aboutMe .bio{
+        flex-direction: column;
+    }
+
+    #aboutMe .bio .biodata{
+        margin: 0;
+        width: 100%;
+        padding: 1em 2.5em;
+    }
+
+    #aboutMe .bio .biocard p{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #aboutMe .bio .biocard img{
+        margin: 0;
+    }
+
+    #aboutMe .bio .biodata .nama{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #aboutMe .bio .biodata .lokasi{
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
     }
 }

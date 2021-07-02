@@ -12,14 +12,17 @@
 <body>
     <!-- Start Header Section -->
     <header>
+        <!--Navigation bar-->
         <nav id="nav">
             <div id="logo">
                 <img src="assets/pet.png" alt="logo">
                 <p class="namaLogo">PetSku</p>
             </div>
+            <!--Menu utama-->
             <div id="menu">
                 <ul>
                     <li><a href="#" class="menus">Beranda</a></li>
+                    <!--Menu produk dengan dropdown-->
                     <li class="dropdown">
                         <a href="#" class="menus" id="produk">Produk 
                             <i class="fas fa-angle-down"></i>
@@ -32,16 +35,24 @@
                             </div>
                          </a>
                     </li>
+                    <!--end of dropdwon menu-->
                     <li><a href="#" class="menus">Tentang Kami</a></li>
                     <li><a href="#" class="btnKontak">Kontak</a></li>
                 </ul>
             </div>
+            <!--End of menu utama-->
+
+            <!--Tombol burger-->
             <div id="hamburger">
                 <div class="ham"></div>
                 <div class="ham"></div>
                 <div class="ham"></div>
             </div>
+            <!--End of tombol burger-->
         </nav>
+        <!--End of navigation bar-->
+
+        <!--Main header-->
         <div id="jumbotron">
             <div class="jumbo1">
                 <h1 class="teksAtas">Cintai Peliharaanmu</h1>
@@ -54,23 +65,89 @@
             <div class="jumbo4">
                 <img src="/assets/72ppi/2.png" alt="">
             </div>
-            
         </div>
+        <!--End of main header-->
     </header>
     <!-- End Header Section -->
 
     <!--  Start Main Section  -->
     <main>
+        <!--Kategori-->
         <article id="category">
             <h3>Kategori</h3>
-            <div id="katList">
-                <img src="/assets/pet-food.png" alt="" class="list1">
-                <img src="/assets/pet-toy.png" alt="" class="list2">
-                <img src="/assets/comb.png" alt="" class="list3">
+            <!--Kartu-->
+            <ul id="katList">
+                <li class="card card1">
+                    <img src="/assets/pet-food.png" alt="" class="list1">
+                    <h4>Pet Food</h4>
+                    <p>Kami menyediakan makanan berkualitas untuk peliharaan anda.</p>
+                    <button>Klik Disini!</button>
+                </li>
+                <li class="card card2">
+                    <img src="/assets/pet-toy.png" alt="" class="list2">
+                    <h4>Pet Toys</h4>
+                    <p>Alat bermain peliharaan anda yang tentunya aman, berkualitas dan menyenangkan.</p>
+                    <button>Klik Disini!</button>
+                </li>
+                <li class="card card3">
+                    <img src="/assets/comb.png" alt="" class="list3">
+                    <h4>Grooming Tools</h4>
+                    <p>Di PetSku terdapat berbagai macam alat grooming, pilih sesuai dengan kebutuhan anda.</p>
+                    <button><span>Klik Disini!</span></button>
+                </li>
+            </ul>
+            <!--End of kartu-->
+        </article>
+        <!--End of kategori-->
+
+        <!--Carousel-->
+        <article id="love">
+            <h3>Much Love from your Pet</h3>
+            <div class="msg">
+                <img src="/assets/1.jpg" alt="">
+                <p><span class="q">"</span>Thank You!<span class="q">"</span></p>
             </div>
         </article>
+        <!--End of carousel-->
+
+        <!--About meee-->
+        <aside id="aboutMe">
+            <h3>My Profile</h3>
+            <div class="bio">
+                <div class="biocard">
+                    <img src="/assets/profile.png" alt="">
+                    <p>Mahasiswa | Front-end Developer</p>
+                </div>
+                <div class="biodata">
+                    <p class="nama">Willie Ryantama</p>
+                    <p class="lokasi">Jakarta, Indonesia</p>
+                    <p class="tentang">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum hic itaque nobis laborum ullam enim adipisci vitae laboriosam? Asperiores, obcaecati iste. Consequuntur, adipisci ea quidem quia quisquam fugit illo odit!</p>
+                </div>
+            </div>
+        </aside>
     </main>
     <!-- End Main Section -->
+
+    <!--Footer-->
+    <footer>
+        <div class="logo-footer">
+            <img src="/assets/pet.png" alt="">
+            <p>PetSku</p>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                <li><a href="#"><i class="fab fa-github"></i>github</a></li>
+            </ul>
+        </div>
+        <div class="contact-us">
+            <a href="#">Contact us</a>
+            <p>&copy;WillieRyantama | Dicoding Submission</p>
+        </div>
+    </footer>
+    <!--End Footer-->
     <script src="script.js"></script>
 </body>
 </html>
