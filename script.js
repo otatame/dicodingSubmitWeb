@@ -8,4 +8,5 @@ window.addEventListener("scroll", ()=>{
 
 hamburg.addEventListener('click', ()=>{
     menu.classList.toggle('displays')
+    hamburg.classList.toggle('isActive')
 })
