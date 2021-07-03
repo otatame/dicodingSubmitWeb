@@ -215,10 +215,10 @@ nav #menu ul{
     background-image: url('./assets/kucing.png');
     background-size: 450px;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 450px;
     height: 70vh;
     position: absolute;
-    right: -10%;
+    left: 60%;
 }
 
 /* jumbo 4 */
