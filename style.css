@@ -341,7 +341,7 @@ main{
     align-items: center;
 }
 
-.msg img{
+#love .msg img{
     width: 640px;
     border-radius: 5px;
 }
@@ -590,13 +590,13 @@ footer{
     #jumbotron{
         display: flex;
         flex-direction: column;
-        padding: 7em 2em 0 2em;
-        align-items: baseline;
+        padding: 7em 0 0 0;
         height: 110vh;
     }
 
     #jumbotron .jumbo1{
         width: 100%;
+        padding: 0 2em;
     }
 
     #jumbotron .jumbo1 .teksAtas{
@@ -622,13 +622,16 @@ footer{
 
     #jumbotron .jumbo3{
         position: initial;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-size: 320px;
         margin-top: 3em;
     }
 
     /* main */
+    #category{
+        padding: 2em 2em;
+    }
 
     #category h3{
         text-align: center;
@@ -641,16 +644,38 @@ footer{
     }
 
     #category #katList img{
-        width: 180px;
+        width: 200px;
         padding: 20px 0;
     }
 
     #category #katList .card{
-        width: 350px;
+        width: 400px;
+        margin: 0 1em 2em 0;
+        padding: 25px 40px;
+    }
+
+    #category #katList .card h4{
+        font-size: 28px;
+    }
+    
+    #category #katList .card p{
+        font-size: 16px;
     }
 
     #category #katList .card:hover img{
-        width: 190px;
+        width: 210px;
+    }
+
+    #category #katList .card button{
+        font-size: 15px;
+    }
+
+    #category #katList .card button::after{
+        top: 15px;
+    }
+
+    #love{
+        height: 60vh;
     }
 
     #love .msg{
@@ -658,11 +683,16 @@ footer{
     }
 
     #love .msg img{
-        width: 400px;
+        width: 280px;
+    }
+
+    #love h3{
+        font-size: 22px;
     }
 
     #love .msg p{
         margin-top: 2em;
+        font-size: 24px;
     }
     
     #aboutMe{
@@ -671,12 +701,20 @@ footer{
 
     #aboutMe .bio{
         flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
     }
 
     #aboutMe .bio .biodata{
         margin: 0;
         width: 100%;
-        padding: 1em 2.5em;
+        padding: 1em 2em;
+    }
+
+    #about .bio .biocard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #aboutMe .bio .biocard p{
@@ -686,7 +724,9 @@ footer{
     }
 
     #aboutMe .bio .biocard img{
-        margin: 0;
+        margin-left: 40px;
+        width: 120px;
+
     }
 
     #aboutMe .bio .biodata .nama{
@@ -712,13 +752,6 @@ footer{
         justify-content: space-between;
     }
 
-    #love .msg img{
-        width: 500px;
-    }
+   
 }
 
-@media screen and (min-width: 900px){
-    #love .msg img{
-        width: 640px;
-    }
-}
