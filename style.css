@@ -696,7 +696,7 @@ footer{
     }
     
     #aboutMe{
-        height: 110vh;
+        height: 120vh;
     }
 
     #aboutMe .bio{
@@ -752,6 +752,8 @@ footer{
         justify-content: space-between;
     }
 
-   
+    #aboutMe{
+        height: 80vh;
+    }
 }
 
